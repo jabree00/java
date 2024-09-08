@@ -1,0 +1,26 @@
+
+------------------------------------------------------------------------------------------
+JOB ID         BIRTHDATE      CATEGORY       MINORITY?      GENDER         SALARY         
+------------------------------------------------------------------------------------------
+
+120            1964-11-12     Manager        False          Female         37800.0        
+
+134            1941-11-10     Manager        False          Female         41550.0        
+
+168            1962-04-23     Manager        False          Female         46875.0        
+
+240            1961-06-15     Manager        False          Female         54375.0        
+
+277            1965-05-20     Manager        False          Female         43000.0        
+
+348            1962-06-11     Manager        False          Female         56750.0        
+
+371            1966-04-05     Manager        False          Female         58125.0        
+
+413            1966-03-13     Manager        False          Female         43500.0        
+
+462            1963-10-18     Manager        False          Female         34410.0        
+
+468            1965-11-28     Manager        False          Female         55750.0        
+
+------------------------------------------------------------------------------------------

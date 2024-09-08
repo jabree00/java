@@ -1,0 +1,47 @@
+
+
+    /*
+    public void handleInput(){
+        displayInstructions();
+        
+        Scanner sc = new Scanner(System.in); 
+        int input = sc.nextInt(); 
+        
+
+        while(input != 0){
+
+            if(input  == 1){
+                displayData(employees); 
+
+            } else if(input == 2){
+                System.out.println("Which job title are you searching for?");
+                String wordInput =  sc.next(); 
+                displayData(searchByJobTitle(wordInput)); 
+            } else if(input == 3){
+                sortBySalary(); 
+            }
+
+            System.out.println("What would you like to do next?");
+            input = sc.nextInt(); 
+        }
+
+    } //end handleInput
+    */
+
+
+        /*
+    public ArrayList<Employee> searchByJobTitle(String jt){
+        ArrayList<Employee> rows = new ArrayList<Employee>(); 
+
+        for(Employee e: employees){
+            if(e.getJobCategory().equals(jt)){
+                rows.add(e); 
+            }
+        }
+
+        //Update currentResults 
+        currentResults = rows; 
+
+        return rows; 
+    }
+    */
