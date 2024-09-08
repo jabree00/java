@@ -134,7 +134,7 @@ public class Database {
     //Save the last search results to a text file
     public boolean save(){
         try {
-            FileWriter myWriter = new FileWriter("./DatabaseProject/results.txt",false);
+            FileWriter myWriter = new FileWriter("../results.txt",false);
             myWriter.write(displayData(searchResults));
             myWriter.close();
             
