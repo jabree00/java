@@ -18,7 +18,7 @@ public class Database {
     public Database(){
        
         try {
-            File myObj = new File("./DatabaseProject/employees.csv");
+            File myObj = new File("../employees.csv");
             Scanner myReader = new Scanner(myObj);
             int index = 0; 
             while (myReader.hasNextLine()) {
