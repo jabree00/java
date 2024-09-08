@@ -1,3 +1,9 @@
+/* 
+PURPOSE: Load CSV data as objects. Manipulate/Access the data. 
+LAST MODIFIED: 04/2024
+*/
+
+
 import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.Scanner; // Import the Scanner class to read text files
@@ -47,21 +53,25 @@ public class Database {
         }
 
     }
-    
+
+    //Print out every employee object
     public void printEmployees(){
         for(Employee e: employees){
             System.out.println(e); 
         }
     }
 
+    //Return a list of every employee object 
     public ArrayList<Employee> getEmployees(){
         return employees; 
     }
 
+    //Return a list of the objects that appeared in the most recent search 
     public ArrayList<Employee> getSearchResults(){
         return searchResults; 
     }
 
+    //Create a formatted string table of the data 
     public String displayData(ArrayList<Employee> input){
 
         String result = "\n" + MyString.repeat("-",90) + "\n";
@@ -86,6 +96,7 @@ public class Database {
 
 
 
+     //Searches for every object whose string representation includes EACH of the words in the search query. 
      public ArrayList<Employee> search(String input){
         String[] queries = input.toLowerCase().split(" "); 
         ArrayList<Employee> list = new ArrayList<Employee>(); 
@@ -107,6 +118,7 @@ public class Database {
         return list; 
     }
 
+    //Given the record ID, delete that record from the saved search results 
     public boolean delete(int ID){
         
         for(int i = 0; i < searchResults.size(); i++){
@@ -119,6 +131,7 @@ public class Database {
         return false; 
     }
 
+    //Save the last search results to a text file
     public boolean save(){
         try {
             FileWriter myWriter = new FileWriter("./DatabaseProject/results.txt",false);
@@ -136,6 +149,7 @@ public class Database {
     }
 
 
+    //Sort the employess based on salary 
     public void sort(){
         for (int j = 1; j < employees.size(); j++){
                 Employee temp = employees.get(j);
@@ -151,13 +165,6 @@ public class Database {
         
          
     }
-    
-    /*
-    public static void main(String[] args) {
-        Database db = new Database(); 
-        //System.out.println(db.displayData(db.search("male true Custodial"))); 
-        
-    }*/
     
 
 }
